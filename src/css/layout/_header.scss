@@ -1,3 +1,15 @@
 .header{
-	height: 16rem;
+	height: 10rem;
+	background-color: $color-white;
+
+	@include respondmax(lg){
+		height: 8rem;
+	}
+	@include respondmax(md){
+		height: 6.5rem;
+	}
+
+	@include respondmax(sm){
+		height: 5rem;
+	}
 }
