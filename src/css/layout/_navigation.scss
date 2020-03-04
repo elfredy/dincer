@@ -1,0 +1,81 @@
+.myNavbar {
+  display: flex;
+  padding-top: 3rem;
+  @include respondmax(sm) {
+    display: none;
+  }
+}
+.myNav {
+  &__item {
+    margin: 0 0.5rem;
+    height: 3rem;
+    width: 11rem;
+    text-align: center;
+    @include respondmax(lg){
+      width: 9rem;
+      margin: 0;
+    }
+    @include respondmax(md) {
+      margin: 0;
+      width: 6rem;
+    }
+    &--1 {
+      width: 18rem;
+      margin-top: -3rem;
+
+      @include respondmax(xl) {
+        width: 13rem;
+        margin-top: -1.5rem;
+      }
+
+      @include respondmax(lg) {
+        width: 8rem;
+        margin-top: -1.5rem;
+      }
+
+      @include respondmax(md) {
+        width: 8rem;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-dark;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 0.5rem;
+    transition: all 0.5s;
+    text-transform: capitalize;
+
+    @include respondmax(lg) {
+      font-size: 1.4rem;
+    }
+
+    @include respondmax(md) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $color-white;
+      text-decoration: none;
+      background-color: $color-secondary;
+      padding: 1.3rem 0.5rem;
+    }
+
+    &--logo {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .active {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

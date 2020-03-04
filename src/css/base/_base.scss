@@ -1,12 +1,12 @@
-*{
-	box-sizing: inherit;
+* {
+  box-sizing: inherit;
 }
-html{ 
-	width: 100%;
-	height: 100%;
-	font-size: 62.5%; //burda rem'in 10 piksel olmasını ayarladık ki rahat değer verebilelim tarayıcı 16 piksel veriyor biz onun 62.5 faizini alarak 10 yaptık
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%; //burda rem'in 10 piksel olmasını ayarladık ki rahat değer verebilelim tarayıcı 16 piksel veriyor biz onun 62.5 faizini alarak 10 yaptık
 
-	/* @include respondmax(md){
+  /* @include respondmax(md){
 		font-size: 40%;
 	} 
 
@@ -21,13 +21,23 @@ html{
 	@include respondmin(xl){
 		font-size: 62.5% ; //1rem=12px
 	}		 */
-
 }
 
-body{
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 
+  @include font($nntr);
 }
 
+.container {
+  @media (min-width: 1330px) {
+    max-width: 100% !important;
+    padding: 0 10rem !important;
+  }
+
+  @media (min-width: 1560px) {
+    padding: 0 15rem !important;
+  }
+}

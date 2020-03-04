@@ -10,10 +10,15 @@
 @import "base/fonts";
 
 @import "components/button"; 
+@import "components/dropDown"; 
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/search";
+@import "layout/mobileNavigation";
+@import "layout/footerNav";
+
 
 @import "pages/contact";
 
