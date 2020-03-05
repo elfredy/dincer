@@ -49,4 +49,8 @@
       background-color: #dadada;
       font-size: 2rem;
   }
+
+  &:focus{
+    outline: none;
+  }
 }

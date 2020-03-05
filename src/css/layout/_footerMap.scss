@@ -30,7 +30,11 @@
     color: $color-dark;
     text-decoration: none;
     transition: all 0.3s;
-
+    font-size: 1.6rem;
+    @include respondmax(md) {
+      font-size: 1.2rem;
+      max-width: 50%;
+    }
     &:hover {
       color: $color-secondary;
       text-decoration: none;
@@ -39,6 +43,11 @@
   &__mail {
     text-decoration: none;
     transition: all 0.3s;
+    font-size: 1.6rem;
+    @include respondmax(md) {
+      font-size: 1.2rem;
+      max-width: 50%;
+    }
 
     &:hover {
       color: $color-secondary;

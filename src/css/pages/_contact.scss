@@ -1,3 +1,69 @@
 .contact{
-	
+margin-bottom: 5rem;   
+    &__top{
+        height: 35rem;
+        width: 100%;
+        background-image: linear-gradient(rgba($color-dark, 0.3), rgba($color-dark, 0.3)),
+         url("../../img/contact-img.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &__address{
+        padding: 13rem 0;
+    }
+    &__content{
+        max-width: 70%;
+    }
+
+    &__right{
+        padding: 0 3rem;
+    }
+
+    &__input,&__textarea,&__send{
+        font-size: 1.6rem;
+        border-radius: .3rem;
+        &:focus{
+            box-shadow: none !important;
+            
+            outline: none !important;
+        }
+    }
+
+    &__input,&__textarea{
+        width: 100%;
+        border: 1px solid #a0a2a3 !important;
+        color: $color-dark !important;
+
+
+    }
+
+    &__input,&__send{
+        height: 4rem;
+    }
+
+    &__input:not(:first-child){
+        margin-top: 2rem;
+    }
+    
+    &__textarea{
+        margin-top: 3rem;
+    }
+
+    &__send{
+        margin-top: 2.5rem;
+        border: 1px solid $color-secondary;
+        width: 13rem;
+        background-color: $color-secondary;
+        color: $color-white;
+        transition: all .4s;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: $color-white;
+            color: $color-secondary;
+        }
+    }
 }
