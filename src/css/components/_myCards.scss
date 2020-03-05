@@ -1,0 +1,52 @@
+.newsCard {
+  display: block;
+  max-width: 40rem;
+  color: $color-dark;
+  padding: 3rem;
+  background-color: $color-white;
+  transition: all 0.4s;
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  & p {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  & strong {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: translateX(4rem);
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $color-dark;
+    box-shadow: 0 0 0.7rem rgba($color-white, 0.4);
+
+  
+    .newsCard__title {
+      transform: translateX(0.5rem);
+      opacity: 1;
+    }
+  }
+
+  &__plus{
+      display: inline-block;
+      padding: .2rem 1.2rem;
+      border-radius: 1.2rem;
+      background-color: #dadada;
+      font-size: 2rem;
+  }
+}
