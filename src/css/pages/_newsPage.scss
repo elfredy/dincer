@@ -1,6 +1,4 @@
-.carier {
-
-
+.newsPage {
   &__top {
     height: 35rem;
     width: 100%;
@@ -9,10 +7,12 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  &__content {
+    padding: 3rem 0;
 
-  &__text{
-    font-size: 1.4rem;
-    padding: 2rem 0;
+    & p {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
   }
-
 }

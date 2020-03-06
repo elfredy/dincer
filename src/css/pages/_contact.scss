@@ -1,5 +1,5 @@
 .contact{
-margin-bottom: 5rem;   
+  
     &__top{
         height: 35rem;
         width: 100%;
@@ -19,7 +19,7 @@ margin-bottom: 5rem;
     }
 
     &__right{
-        padding: 0 3rem;
+        padding: 0 6rem;
     }
 
     &__input,&__textarea,&__send{
@@ -34,18 +34,18 @@ margin-bottom: 5rem;
 
     &__input,&__textarea{
         width: 100%;
-        border: 1px solid #a0a2a3 !important;
+        border: 1px solid $color-grey-light-2 !important;
         color: $color-dark !important;
-
+        padding-left: 1.5rem;
 
     }
 
     &__input,&__send{
-        height: 4rem;
+        height: 5rem;
     }
 
     &__input:not(:first-child){
-        margin-top: 2rem;
+        margin-top: 3.4rem;
     }
     
     &__textarea{

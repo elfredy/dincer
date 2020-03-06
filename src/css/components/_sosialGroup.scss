@@ -1,0 +1,40 @@
+.sosialGroup{
+    &__fb,&__twt{
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $color-dark;
+        padding: 1rem 2rem;
+        border-radius: .3rem;
+        border: 1px solid $color-grey-light-2;
+        background-color: $color-white;
+        transition: all .4s;
+        
+        &::after{
+           content: "3"; 
+        }
+        &:hover{
+            text-decoration: none;
+            color: $color-secondary;
+            background-color: #e4e4e4;
+        }
+
+        & i{
+            font-size: 2.4rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__fb{
+        & i{
+            color: #39579a;
+        }
+    }
+
+    &__twt{
+        margin-left: 1rem;
+        & i{
+            color: #00abf0;
+        }
+    }
+}

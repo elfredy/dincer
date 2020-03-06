@@ -1,18 +1,38 @@
-.mySlider{
-    &__nav{
-        padding: 3rem 0;
-        & img{
-            width: 10rem;
-            height: 10rem;
-            object-fit: cover;
-        }
+.mySlider {
+  &__nav {
+    padding: 3rem 0;
+    & img {
+      width: 10rem;
+      height: 10rem;
+      object-fit: cover;
     }
+  }
 
-    &__top{
-        & img{
-            width: 100%;
-            height: 50rem;
-            object-fit: cover;
-        }
+  &__top {
+    & img {
+      width: 100%;
+      height: 50rem;
+      object-fit: cover;
     }
+  }
+}
+.slick-prev{
+    left: -4rem;
+}
+.slick-prev::before,
+.slick-next::before {
+  content: "<";
+  border-radius: 1.8rem;
+  font-size: 24px;
+  line-height: 1;
+  opacity: 0.75;
+  color: red;
+  font-weight: 800;
+  background-color: #fff;
+  padding: 0.7rem 1.8rem;
+  @include font($nntr);
+}
+
+.slick-next::before {
+  content: ">";
 }

@@ -1,6 +1,6 @@
 .newsCard {
   display: block;
-  max-width: 40rem;
+  max-width: 38rem;
   color: $color-dark;
   padding: 3rem;
   background-color: $color-white;
@@ -9,6 +9,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    transition: all .4s;
   }
 
   & p {
@@ -19,15 +20,15 @@
   & strong {
     font-size: 1.8rem;
     margin-top: 2rem;
+    transition: all .4s;
   }
 
   &__title {
     font-size: 1.6rem;
     text-transform: uppercase;
     display: inline-block;
-    transform: translateX(4rem);
-    opacity: 0;
     transition: all 0.4s;
+    margin-left: 1rem;
   }
 
   &:hover {
@@ -37,8 +38,15 @@
 
   
     .newsCard__title {
-      transform: translateX(0.5rem);
-      opacity: 1;
+      color: $color-secondary;
+    }
+
+    .newsCard__img{
+      transform: scale(1.06);
+    }
+
+    & strong{
+      color: $color-secondary;
     }
   }
 

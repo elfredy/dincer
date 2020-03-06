@@ -18,7 +18,12 @@
       }
   }
 
-  &__item:not(:first-child) {
+  &__item{
+    width: 16rem;
+    text-align: center;
+  }
+
+/*   &__item:not(:first-child) {
     margin-left: 5.5rem;
 
     @include respondmax(lg) {
@@ -30,5 +35,5 @@
     @include respondmax(sm) {
         margin-left: 0;
       }
-  }
+  } */
 }
